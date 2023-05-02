@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/flag2"
+    android:padding="8dp"
+    tools:context=".MainPage">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        app:navigationIcon="@drawable/ic_baseline_arrow_backwhite_24"
+
+        />
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="10dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/admintv1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="DASHBOARD"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="30sp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/adminRegister"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:background="@drawable/saffronbox"
+            >
+
+            <ImageView
+                android:id="@+id/idImgBtn"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:paddingTop="20dp"
+                android:backgroundTint="#E4FFFC"
+                android:scaleType="fitCenter"
+               android:src="@drawable/ic_baseline_how_to_reg_24"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:clickable="false"
+                android:text="  Register  "
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <FrameLayout
+
+            android:id="@+id/adminShow"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:background="@drawable/saffronbox">
+
+            <ImageView
+                android:id="@+id/idImgBtn3"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:paddingTop="15dp"
+                android:backgroundTint="#E4FFFC"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_people_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:clickable="false"
+                android:text="All Voters "
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/adminDelete"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/saffronbox">
+
+            <ImageView
+                android:id="@+id/idImgBtn4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingTop="20dp"
+                android:backgroundTint="#E4FFFC"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_delete_forever_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:clickable="false"
+                android:text="  Delete  "
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/adminsearch"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:background="@drawable/saffronbox"
+            >
+
+            <ImageView
+                android:id="@+id/idImgBtn5"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:paddingTop="15dp"
+                android:backgroundTint="#E4FFFC"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_person_search_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:clickable="false"
+                android:text="  Search By Id "
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/adminFaq"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:background="@drawable/saffronbox"
+            android:layout_marginStart="50dp"
+            >
+
+            <ImageView
+                android:id="@+id/idImgBtn6"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:paddingTop="15dp"
+                android:backgroundTint="#E4FFFC"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_info_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:clickable="false"
+                android:text="FAQ"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
